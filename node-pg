@@ -1,2 +1,11 @@
 #!/bin/bash
-echo 'ok';
+echo 'Installing packages';
+
+# NodeJS - https://github.com/joyent/node/wiki/installing-node.js-via-package-manager
+sudo apt-get install -y curl
+curl -sL https://deb.nodesource.com/setup | sudo bash -
+sudo apt-get install -y nodejs
+
+# postgreSQL - https://help.ubuntu.com/community/PostgreSQL
+echo '>> \password postgres'
+sudo apt-get install -y postgresql postgresql-contrib
