@@ -9,6 +9,7 @@ sudo apt-get install -y nodejs
 # postgreSQL - https://help.ubuntu.com/community/PostgreSQL
 sudo apt-get install -y postgresql postgresql-contrib
 echo '>> \password postgres'
+echo '>> create user ### with password \'###\';'
 sudo -u postgres psql postgres
 
 # phpPgAdmin installation (dev only)
