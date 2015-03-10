@@ -10,3 +10,6 @@ sudo apt-get install -y nodejs
 sudo apt-get install -y postgresql postgresql-contrib
 echo '>> \password postgres'
 sudo -u postgres psql postgres
+
+# phpPgAdmin installation (dev only)
+sudo apt-get install -y phppgadmin
